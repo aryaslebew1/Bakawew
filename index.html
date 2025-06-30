@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gambar Jadi Tombol</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+    img:hover {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+  <img id="gambar" src="gambar1.jpg" alt="Klik gambar" onclick="ubahGambar()">
+  <script>
+    function ubahGambar() {
+      document.getElementById("gambar").src = "gambar2.jpg";
+    }
+  </script>
+</body>
+</html>
